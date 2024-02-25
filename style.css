@@ -1,0 +1,148 @@
+body{
+    background-image: url('2.stopwatch.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 200%;
+    margin: 0;
+}
+
+
+.display{
+    margin-left: 5%;
+    width: 60%;
+    margin-top: 8%;
+    align-items: center;
+    
+    
+}
+
+.display .title{
+    margin-left: 20%;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #44849B;
+    height: max-content;
+    width: 60%;
+    color: black;
+    padding: 0.5em 0 0.5em 0;
+    text-align: center;
+}
+.display .time-display{
+    height: max-content;
+    width: 70%;
+    border: 1px solid black;
+    background-color: #18323D;
+    text-align: center;
+    margin-left: 15%;
+    padding: 1.1em 0 1.1em 0;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 1.1em;
+}
+.display .buttons{
+    background-color: #44849B;
+    margin-left: 20%;
+    height: max-content;
+    width: 60%;
+    border: 0.07px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.display .buttons button{
+    margin: 0.5em 1em 0.5em 1em;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 600;
+    background-color: transparent; /* Set background to transparent */
+  border: none; 
+  cursor: pointer;
+}
+
+.hidden-text {
+    display: none;
+  }
+  
+  /* Show the text when the button is hovered */
+  .display .buttons button:hover + .hidden-text {
+    display: block;
+  }
+
+
+.lap{
+    margin-left: 17%;
+    margin-top: 4%;
+}
+
+.lap-topic{
+    font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: extra-expanded;
+    margin-bottom: 0.33em;
+}
+
+.lap-times{
+    font-size: 0.8em;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0.02em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+@media only screen and (max-width: 1440px) {
+   .display .buttons{
+    justify-content: center;
+   
+   }
+   .display .buttons button{
+    margin: 0.5em 0.5em 0.5em 0.5em;
+   }
+
+   .lap{
+    font-size: 0.9em;
+   }
+  }
+
+  @media only screen and (max-width: 1236px) {
+    .display .time-display{
+        font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (max-width: 1015px){
+    body{
+        font-size: 150%;
+    }
+  }
+
+  @media only screen and (max-width: 1015px){
+    body{
+        font-size: 120%;
+    }
+  }
+
+  @media only screen and (max-width: 637px){
+    body{
+        font-size: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 554px){
+    body{
+        font-size: 80%;
+    }
+  }
+
+  @media only screen and (max-height: 800px) {
+    body{
+        height: 300%;
+    }
+  }
